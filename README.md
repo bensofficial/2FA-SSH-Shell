@@ -19,6 +19,6 @@ Chat `@BotFather` with `/newbot`
 ### Setup user for OTP Login
 - Add a user: `adduser [NAME]`
 - Change the default shell: `usermod --shell /bin/shell2FA [NAME]`
-- Check weather it was successfull: `grep [NAME] /etc/passwd`
+- Optional: Check whether it was successfull: `grep [NAME] /etc/passwd`
 ![/etc/passwd](https://raw.githubusercontent.com/bensofficial/2FA-SSH-Shell/master/Screenshot/etc-passwd.png)
 - Add the user to the ssh group: `adduser [NAME] ssh`
