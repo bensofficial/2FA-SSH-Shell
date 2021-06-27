@@ -31,10 +31,10 @@ echo "Fetching shell from $URL"
 curl -fsSL $URL -o shell2FA
 
 echo "Configuring"
-sed -i '/RECALL_SHELL/c\RECALL_SHELL='$RECALL_SHELL shell2FA
-sed -i '/URGENT_KEY/c\URGENT_KEY='$URGENT_KEY shell2FA
-sed -i '/APIKEY/c\APIKEY='$APIKEY shell2FA
-sed -i '/CHATID/c\CHATID='$CHATID shell2FA
+sed -i '/RECALL_SHELL="/c\RECALL_SHELL='$RECALL_SHELL shell2FA
+sed -i '/URGENT_KEY="/c\URGENT_KEY='$URGENT_KEY shell2FA
+sed -i '/APIKEY="/c\APIKEY='$APIKEY shell2FA
+sed -i '/CHATID="/c\CHATID='$CHATID shell2FA
 
 echo "Moving and making executable"
 mv shell2FA /bin/
