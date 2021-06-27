@@ -3,10 +3,13 @@ Two-Factor Authentication with Telegram Bot for SSH / Shell Login
 
 ## Automatic installation
 `curl -fsSL https://raw.githubusercontent.com/bensofficial/2FA-SSH-Shell/master/install.sh -o install.sh`
+
 `bash install.sh`
 
 Adding a user:
+
 `curl -fsSL https://raw.githubusercontent.com/bensofficial/2FA-SSH-Shell/master/add-user.sh -o add-user.sh`
+
 `bash add-user.sh`
 
 ## Manual setup
